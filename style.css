@@ -72,6 +72,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-weight: 700;
   font-size: 1.15rem;
   color: var(--ink);
+  text-decoration: none;
 }
 
 .brand__dot { color: var(--stamp); }
@@ -82,6 +83,172 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   color: var(--ink-soft);
   letter-spacing: .02em;
 }
+
+/* Navegação de autenticação (topo) */
+.nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: .88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+}
+
+.nav-link:hover { background: var(--paper); color: var(--ink); }
+
+.nav-link--cta {
+  background: var(--ink);
+  color: var(--sheet);
+}
+
+.nav-link--cta:hover { background: var(--stamp); color: var(--sheet); }
+
+.nav-link--ghost {
+  border: 1px solid var(--line);
+}
+
+/* Páginas de autenticação (login / cadastro) */
+.auth-page {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--sheet);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 40px 36px;
+}
+
+.auth-card h1 {
+  font-size: 1.7rem;
+  margin-bottom: 6px;
+}
+
+.auth-card__lede {
+  font-size: .95rem;
+  margin-bottom: 28px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-form label {
+  font-size: .88rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-top: 12px;
+}
+
+.auth-form input {
+  padding: 13px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: .95rem;
+  background: var(--paper);
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: var(--ink);
+  background: var(--sheet);
+}
+
+.auth-form__hint {
+  font-size: .78rem;
+  color: var(--ink-soft);
+}
+
+.auth-form button {
+  margin-top: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--ink);
+  color: var(--sheet);
+  font-weight: 600;
+  font-size: .95rem;
+  cursor: pointer;
+  transition: background .15s ease, transform .1s ease;
+}
+
+.auth-form button:hover { background: var(--stamp); }
+.auth-form button:active { transform: scale(.98); }
+
+.auth-form__msg {
+  font-size: .86rem;
+  margin: 14px 0 0;
+  min-height: 1.2em;
+}
+
+.auth-form__msg--error { color: var(--stamp); }
+.auth-form__msg--ok { color: #2F7A4D; }
+
+.auth-card__switch {
+  text-align: center;
+  font-size: .88rem;
+  margin: 26px 0 0;
+}
+
+.auth-card__switch a {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Página "Minha conta" */
+.conta-page { padding: 56px 0 64px; }
+
+.conta-page h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.conta-page__lede { margin-bottom: 32px; }
+
+.conta-card {
+  background: var(--sheet);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 26px 30px;
+  margin-bottom: 20px;
+}
+
+.conta-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.conta-card__link {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.conta-card__link:hover { color: var(--stamp); }
 
 /* Hero */
 .hero { padding: 72px 0 48px; }
