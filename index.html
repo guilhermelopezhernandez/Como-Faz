@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Como Faz? — burocracia brasileira sem mistério</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar__row">
+    <span class="brand">Como<span class="brand__dot">Faz?</span></span>
+    <span class="protocolo">PROTOCOLO Nº 2026.09.15-BR</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow-free">passo a passo oficial, sem juridiquês</p>
+      <h1>Todo processo burocrático<br>tem um caminho certo.<br>A gente mostra qual.</h1>
+      <p class="hero__lede">
+        CNH, passaporte, e outros documentos explicados em etapas
+        claras — o que fazer primeiro, o que levar e onde não
+        cair em pegadinha.
+      </p>
+      <form class="hero__search" id="topicSearch">
+        <label for="q">O que você precisa resolver hoje?</label>
+        <div class="hero__search-row">
+          <input type="text" id="q" placeholder="ex: tirar CNH, 2ª via do passaporte...">
+          <button type="submit">Buscar</button>
+        </div>
+      </form>
+      <div class="hero__chips">
+        <span class="hero__chips-label">atalhos:</span>
+        <button type="button" class="chip" data-tab="cnh">CNH</button>
+        <button type="button" class="chip" data-tab="passaporte">Passaporte</button>
+      </div>
+    </div>
+    <div class="hero__badge" aria-hidden="true">
+      <svg viewBox="0 0 220 220" class="badge-svg">
+        <circle cx="110" cy="110" r="92" class="badge-ring"/>
+        <path class="badge-check" d="M74 112 L100 138 L150 84" />
+      </svg>
+      <p class="badge-caption">informação<br>confiável</p>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap trust__row">
+    <div class="trust__item">
+      <span class="trust__icon">✓</span>
+      <p>Baseado em fontes e sites oficiais do governo</p>
+    </div>
+    <div class="trust__item">
+      <span class="trust__icon">✓</span>
+      <p>Explicado em linguagem simples, sem juridiquês</p>
+    </div>
+    <div class="trust__item">
+      <span class="trust__icon">✓</span>
+      <p>Sem taxas escondidas nem promessas de atalho</p>
+    </div>
+  </div>
+</section>
+
+<nav class="tabs" aria-label="Temas">
+  <div class="wrap tabs__row">
+    <button class="tab is-active" data-tab="cnh">CNH</button>
+    <button class="tab" data-tab="passaporte">Passaporte</button>
+    <button class="tab" data-tab="em-breve" disabled>+ novos temas em breve</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <article class="dossier is-visible" id="cnh" data-topic="cnh">
+    <div class="dossier__header">
+      <h2>Carteira Nacional de Habilitação</h2>
+      <span class="dossier__tag">1ª habilitação</span>
+    </div>
+
+    <div class="dossier__body">
+      <ol class="steps">
+        <li>
+          <h3>Faça sua inscrição no Detran</h3>
+          <p>Cadastro on-line no site do Detran do seu estado. É nesse
+          passo que você escolhe a <strong>categoria (A, B ou ambas)</strong>
+          e paga a <strong>primeira taxa</strong>.</p>
+        </li>
+        <li>
+          <h3>Passe pelos exames médico e psicotécnico</h3>
+          <p>Feitos em <strong>clínicas credenciadas</strong> pelo Detran.
+          Leve <strong>documento com foto</strong> e o
+          <strong>comprovante de pagamento da taxa</strong>.</p>
+        </li>
+        <li>
+          <h3>Faça a prova teórica</h3>
+          <p><strong>20 questões</strong> sobre legislação, direção
+          defensiva e primeiros socorros. Precisa acertar pelo menos
+          <strong>70%</strong> para seguir.</p>
+        </li>
+        <li>
+          <h3>Complete as aulas práticas</h3>
+          <p><strong>Carga horária mínima</strong> definida pelo Detran,
+          feita em autoescola credenciada, na categoria escolhida.</p>
+        </li>
+        <li>
+          <h3>Faça o exame de direção</h3>
+          <p>Avaliação prática com um examinador do Detran. Aprovando,
+          sua CNH definitiva sai em <strong>até 30 dias</strong>.</p>
+        </li>
+      </ol>
+
+      <aside class="checklist">
+        <h4>Documentos necessários</h4>
+        <ul>
+          <li><strong>RG e CPF</strong> (ou documento com CPF integrado)</li>
+          <li><strong>Comprovante de residência</strong> atualizado</li>
+          <li><strong>Comprovante de pagamento</strong> das taxas do Detran</li>
+        </ul>
+        <p class="checklist__note">Prazos e valores variam por estado —
+        confirme sempre no site oficial do Detran local.</p>
+      </aside>
+    </div>
+  </article>
+
+  <article class="dossier" id="passaporte" data-topic="passaporte">
+    <div class="dossier__header">
+      <h2>Passaporte</h2>
+      <span class="dossier__tag">1ª via e renovação</span>
+    </div>
+
+    <div class="dossier__body">
+      <ol class="steps">
+        <li>
+          <h3>Agende no site da Polícia Federal</h3>
+          <p>O agendamento é feito pelo <strong>portal oficial da PF</strong>
+          — não existe agendamento por telefone ou terceiros.</p>
+        </li>
+        <li>
+          <h3>Pague a Guia de Recolhimento da União (GRU)</h3>
+          <p>Emitida no próprio site da PF. <strong>Guarde o
+          comprovante</strong>, ele é pedido no dia do atendimento.</p>
+        </li>
+        <li>
+          <h3>Compareça ao posto no dia agendado</h3>
+          <p>Leve <strong>documento oficial com foto</strong> e o
+          <strong>comprovante da GRU paga</strong>. Nesse momento sua
+          foto e digitais são coletadas.</p>
+        </li>
+        <li>
+          <h3>Acompanhe o andamento on-line</h3>
+          <p>O status muda de "em processamento" para "pronto para
+          retirada" — normalmente entre <strong>10 e 15 dias
+          úteis</strong>.</p>
+        </li>
+        <li>
+          <h3>Retire ou receba em casa</h3>
+          <p>Você escolhe no agendamento se retira no posto ou recebe
+          pelos Correios, com custo adicional.</p>
+        </li>
+      </ol>
+
+      <aside class="checklist">
+        <h4>Documentos necessários</h4>
+        <ul>
+          <li><strong>RG ou CNH</strong> (documento oficial com foto)</li>
+          <li><strong>CPF</strong></li>
+          <li><strong>Comprovante de pagamento</strong> da GRU</li>
+        </ul>
+        <p class="checklist__note">Menores de idade precisam de
+        autorização dos responsáveis — regras variam conforme o caso.</p>
+      </aside>
+    </div>
+  </article>
+
+</main>
+
+<section class="assist">
+  <div class="wrap assist__grid">
+    <div class="assist__intro">
+      <h2>Ainda com dúvida?</h2>
+      <p>Pergunte com suas palavras. Este assistente responde as
+      dúvidas mais comuns sobre os temas acima.</p>
+    </div>
+    <div class="assist__box">
+      <div class="assist__log" id="assistLog">
+        <div class="msg msg--bot">Pode perguntar sem medo — as respostas
+        aqui são baseadas em fontes oficiais. Por exemplo: "quanto tempo
+        demora a CNH?" ou "quanto custa o passaporte?"</div>
+      </div>
+      <form class="assist__form" id="assistForm">
+        <input type="text" id="assistInput" placeholder="Digite sua pergunta...">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Como Faz? reúne informações públicas de forma organizada e
+    verificada, sem letra miúda. Para dados oficiais e sempre
+    atualizados, confira também o site do órgão responsável (Detran,
+    Polícia Federal, gov.br).</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
